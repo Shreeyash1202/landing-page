@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shreeyash K | Contact</title>
+    <link rel="shortcut icon" type="x-icon" href="static/icon.png" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body bgcolor="black">
+    <!-- NAVBAR SECTION --->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <center>
+        <h2 style="color: aliceblue;">Social Links</h2>
+        <a href="https://www.linkedin.com/in/shreeyashkamble1202/">Linkedin</a>
+        <a href="https://github.com/Shreeyash1202">github</a>
+        <a href="https://www.instagram.com/_shreeee_12/">Instagram</a>
+      </center>
+      <div class="container">
+        <label class="switch">
+          <input type="checkbox" id="toggleButton">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <button class="openbtn" onclick="openNav()">☰ </button>
+    <div class="container">
+      <img src="static/img.jpeg" alt="Nature" style="width:100%;">
+      <div class="bottom-left">
+        <h1> Shreeyash J. K</h1>
+        <h4> Student / <br> Frontend Devloper. </h4>
+        <br>
+        <br>
+        <a href="tel:8104844520">
+          <img src="static/mobile.png" height="15%" width="15%">
+        </a> &nbsp; &nbsp; &nbsp; <a href="mailto:shreeyashk1202@gmail.com">
+          <img src="static/email.png" height="15%" width="15%">
+        </a> &nbsp; &nbsp; &nbsp; <a href="https://wa.me/918104844520/?text=Hello">
+          <img src="static/message.png" height="15%" width="15%">
+        </a>
+      </div>
+    </div>
+    <center>
+      <br>
+      <br>
+      <!--About  -->
+      <div class="card">
+        <h2> About me</h2>
+        <p>"Enthusiastic software engineer with a passion for problem-solving and web development. Dedicated to creating efficient and user-friendly applications. Always eager to learn and grow in the tech industry." <br>
+          <br>
+        </p>
+      </div>
+      <br>
+      <br>
+      <!--Web Link  -->
+      <div class="card">
+        <h2>Web Links</h2>
+        <a id="github" href="https://shreeyash1202.github.io/portfolio/">
+          <img src="static/web.png" height="15%" width="15%">
+        </a>
+        <br>*Portfolio Link*
+      </div>
+    </center>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <div class="copyright">© Shreeyash Kamble | All Right Reserved.</div>
+    </footer>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      //darkmode
+      document.getElementById('toggleButton').addEventListener('change', function() {
+        document.body.classList.toggle('dark-mode');
+      });
+    </script>
+  </body>
+</html>
