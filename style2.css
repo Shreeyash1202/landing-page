@@ -1,65 +1,95 @@
 /*navbar*/
 
-.sidepanel  {
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    height: 350px;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidepanel a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-  }
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color:#444;
-  }
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.logo{
+  font-size: 28px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #fff;
+}
+.headder{
+  width: 100%;
+ 
+  background-color:#111111;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px #fff;
+  height: 70px;
+ 
+  padding: 20px 20px;
+}
+.navbar{
+  display: flex;
+  text-decoration: none;
+}
+span{
+  color:rgb(67, 168, 196);
+}
 
 /*image*/
 
-.bottom-left {
-  position: absolute;
-  bottom: 10%;
-  left: 16px;
+
+/*body*/
+body {
+  width: 100%;
+  height: 300px;
+  background: lightblue url("static/bg2.png") no-repeat fixed center;
+  background-size: cover;
+ 
+}
+.right-angled-triangle {
+  width: auto;
+  height: 100px;
+  border-left: 400px solid transparent;
+  border-bottom: 100px solid #e1b619;
+  
+}
+.mirrored-upside-down-triangle {
+  width:auto;
+  height: 0;
+  border-right:  400px  solid transparent;
+  border-top: 100px solid #e1b619;
+
+}
+.yello {
+  width: 100%;
+  position: relative;
+  font-family:"Myriad pro Semibold";
+  background-color: #e1b619;
 }
 
 
-/*body*/
+.black-triangle {
+  width: auto;
+  height: 100px;
+  border-left: 400px solid transparent;
+  border-bottom: 100px solid #000000;
+  
+}
+.black-down-triangle {
+  width:auto;
+  height: 0;
+  border-right:  400px  solid transparent;
+  border-top: 100px solid #000000;
+
+}
+.black {
+  width: auto;
+  position: relative;
+  font-family:"Myriad pro Semibold";
+  background-color: #000000;
+}
+
+
 .container {
     position: relative;
     font-family: Arial;
-    color: #ffffff;
+    color: #000000;
   }
 
 .card {
@@ -67,7 +97,7 @@
     min-height:80%;
     border-radius: 18px;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #000000;
     
   }
   
@@ -198,3 +228,54 @@ body {
   background-color: var(--text-color);
   color: var(--background-color);
 }
+
+
+
+
+.typing-effect .typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #3498db;
+ 
+  margin: 3%;
+  letter-spacing: 0.15em;
+  animation: typing 3s steps(30) infinite, blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from, to {
+    width: 0;
+  }
+  50% {
+    width: 30%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #3498db;
+  }
+}
+
+.outlined-transparent-text {
+  font-size: 40px;
+  color: #fff;
+  margin: 3%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(94, 104, 111, 0.603);
+  
+}
+
+p{
+  line-height: 1.6;
+  margin: 3%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+
