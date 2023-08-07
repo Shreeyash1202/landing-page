@@ -37,7 +37,7 @@ span{
 /*body*/
 body {
   width: 100%;
-  height: 300px;
+  overflow-x: hidden;
   background: lightblue url("static/bg2.png") no-repeat fixed center;
   background-size: cover;
  
@@ -45,14 +45,14 @@ body {
 .right-angled-triangle {
   width: auto;
   height: 100px;
-  border-left: 400px solid transparent;
+  border-left: 100vw solid transparent;
   border-bottom: 100px solid #e1b619;
   
 }
 .mirrored-upside-down-triangle {
   width:auto;
   height: 0;
-  border-right:  400px  solid transparent;
+  border-right:  100vw solid transparent;
   border-top: 100px solid #e1b619;
 
 }
@@ -67,14 +67,14 @@ body {
 .black-triangle {
   width: auto;
   height: 100px;
-  border-left: 400px solid transparent;
+  border-left: 100vw solid transparent;
   border-bottom: 100px solid #000000;
   
 }
 .black-down-triangle {
   width:auto;
   height: 0;
-  border-right:  400px  solid transparent;
+  border-right:  100vw  solid transparent;
   border-top: 100px solid #000000;
 
 }
