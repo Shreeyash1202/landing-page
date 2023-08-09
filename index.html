@@ -16,17 +16,20 @@
       <a class="logo">Shree <span>yash</span> </a>
   </div>
     <body >
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+      </style>
+
+   <p> </div><br><br><br></p>
+   <div class="outlined-transparent-text" ><h1>HELLO.!!<br>I'M<br>Shreeyash </h1></div>
+   
+    <h4 style="margin: 3%; color: aliceblue;">Student /<br>Frontend Developer .</h4>
     
 
-   <p> </div><br><br><br><br><br></p>
-   <div class="outlined-transparent-text" class="fancy-font">HELLO,<br><br>i am<br>Shreeyash </div>
-   <div class="typing-effect">
-    <h4 class="typing-text"></h4>
-    
-  </div> 
       
         <br>
         <br>
+        &nbsp; &nbsp;&nbsp; 
         <a href="tel:8104844520">
           <img src="static/mobile.png" height="20%" width="16%">
         </a> &nbsp; &nbsp; &nbsp; <a href="mailto:shreeyashk1202@gmail.com">
@@ -41,39 +44,42 @@
       <!--About  -->
       <div class="right-angled-triangle"></div>
       <div class="yello">
+        <br>
         <div id="text">
-          <br><br>
-        <h1 style="color:rgb(255, 255, 255);" > About me</h1>
-        <br><br><br>
-        <p style="color:rgb(255, 255, 255); ">
+          <div class="outlined-transparent-text">
+        <h1 style="color:rgb(255, 255, 255); text-align: left;margin-left: 11%; " > <b>About me</b></h1>
+        </div>
+        <br>
+        <p style="color:rgb(255, 255, 255);margin-left: 5%; ">
 
 "Enthusiastic software engineer with a passion for problem-solving and web development.
  Dedicated to creating efficient and user-friendly applications. 
  Always eager to learn and grow in the tech industry." <br>
-          <br><br><br><br><br>
+          <br><br><br>
         </p>
         
       </div>
-      
-     
-      
-      
-
-
-
-
 
       <!--Web Link  -->
       <div class="black-triangle"></div></div>
      <div class="black">
+      <br>
+      <div class="outlined-transparent-text">
+        <h1 style="color:rgb(255, 255, 255);  " > <b>contact</b></h1>
+        </div>
+      <br>
+      <p style="color:rgb(255, 255, 255);">shreeyashk1202@gmail.com</p>
+      <br>
+      <hr width="10%" />
       <br><br>
         <h2 style="color:rgb(255, 255, 255);">Web Links</h2>
         <br>
         <a id="github" href="https://shreeyash1202.github.io/portfolio/">
-          <img src="static/wev.jpg" height="15%" width="15%">
+          <img src="static/link.png" height="15%" width="15%">
         </a>
         <br><p1 style="color:rgb(255, 255, 255);">*Portfolio Link*<p1>
           <br><br>
+          
       </div>
       <div class="black-down-triangle "></div>
     
@@ -99,10 +105,8 @@
     <a id="github" href="https://www.linkedin.com/in/shreeyashkamble1202/">
       <img src="static/li.png" height="10%" width="10%">
     </a>
-  </center>
-  <br>
-    
-    
+
+  <br></center>
     <footer>
       <div class="copyright">© Shreeyash Kamble | All Right Reserved.</div>
     </footer>
@@ -118,34 +122,6 @@
       document.getElementById('toggleButton').addEventListener('change', function() {
         document.body.classList.toggle('dark-mode');
       });
-
-      const phrases = ["Student", "Front End Developer"];
-const typingElement = document.querySelector(".typing-text");
-let phraseIndex = 0;
-let charIndex = 0;
-
-function type() {
-  if (charIndex < phrases[phraseIndex].length) {
-    typingElement.textContent += phrases[phraseIndex][charIndex];
-    charIndex++;
-    setTimeout(type, 100);
-  } else {
-    setTimeout(erase, 1500);
-  }
-}
-
-function erase() {
-  if (charIndex > 0) {
-    typingElement.textContent = phrases[phraseIndex].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, 50);
-  } else {
-    phraseIndex = (phraseIndex + 1) % phrases.length;
-    setTimeout(type, 500);
-  }
-}
-
-type();
 
 
     </script>
