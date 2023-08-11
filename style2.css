@@ -46,7 +46,8 @@ body {
   width: auto;
   height: 100px;
   border-left: 100vw solid transparent;
-  border-bottom: 100px solid #e1b619;
+ 
+  border-bottom: 100px solid #be9913;
   transform: scaleX(-1);
 }
 
@@ -54,7 +55,7 @@ body {
   width: 100%;
   position: relative;
   font-family:"Myriad pro Semibold";
-  background-color: #e1b619;
+  background-color: #be9913;
   
 }
 
